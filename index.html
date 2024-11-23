@@ -3,18 +3,34 @@
 
 <head>
 
-    <script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="vendor/jquery/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";image_urls['rain2']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";image_urls['rain3']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";image_urls['rain4']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv')
-.css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)])
-.css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
-<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="vendor/jquery/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>$(document).ready(function(){var a=$('<img>').attr({'src':'https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png','border':0});$('<a></a>').css({position:'absolute',right:'0px',top:'22px','z-index':'90'}).attr({'href':'http://tutorialuntukblog.blogspot.com/2011/10/tutorial-kelopak-bunga-berguguran-di.html'}).append(a).appendTo('body')});</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById('background-audio');
+            if (audio) {
+                audio.volume = 0.5; // Set volume to 50%
+            }
+        })
+    </script>
 
+<script>
+    function downloadPDF() {
+        window.location.href = 'https://drive.google.com/file/d/1YpOBk4iz_1jtn_oRiF8DxEFoDc3VpzC4/view?usp=drivesdk';  // Set your PDF file path
+    }
+</script>
+
+
+   
+<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="vendor/jquery/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";image_urls['rain2']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";image_urls['rain3']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";image_urls['rain4']="https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv')
+    .css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)])
+    .css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
+    <script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="vendor/jquery/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>$(document).ready(function(){var a=$('<img>').attr({'src':'https://icons.iconarchive.com/icons/aha-soft/free-large-love/48/Heart-icon.png','border':0});$('<a></a>').css({position:'absolute',right:'0px',top:'22px','z-index':'90'}).attr({'href':'http://tutorialuntukblog.blogspot.com/2011/10/tutorial-kelopak-bunga-berguguran-di.html'}).append(a).appendTo('body')});</script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/wed.ico" type="image/x-icon">
-
     <title>Kalindi weds Achal</title>
 
     <!-- Bootstrap Core CSS -->
@@ -34,16 +50,13 @@
     <link href="css/agency.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style type="text/css">
-        #our-story{
-            background: #4D021B;
-        }
-        #map{
+        
+         #map{
             height: 400px;
             width: 100%;
             background-color: grey;
        }
 
-    
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -111,14 +124,14 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Kalindi and Achal are tying the knot on</div>
                 <div class="intro-heading animated zoomInDown">2<sup>nd</sup> of February 2025</div>
-                <a href="invite/invite.mp4" class="page-scroll btn btn-xl">Download<br> e-Invitation</br></a>
-            </div>
+                <button onclick="downloadPDF()" style="background-color:Yellow ; color:Red";>Download Invitation </button>
+                </div>
         </div>
     </header>
 
     
     <!--Our Story Section-->
-    <section id="our-story">
+    <section id="our-story" class="bg3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -129,7 +142,7 @@
         </div>
     </section>
 <!-- About Section -->
-<section id="about">
+<section id="about" class="bg4">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -144,14 +157,18 @@
                     <li>
                         <div class="timeline-image">
                             <img class="img-circle img-responsive" src="img/about1/1.jfif" alt="">
+                            <div class="popup">
+                                <p>Get Ready with Haldi colour Outfit</p>
+                            </div>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Haldi</h4>
                                 <h4 class="subheading">1<sup>st</sup> February 2025</h4>
                             </div>
-                            <div class="timeline-body">
+                           <div class="timeline-body">
                                 <p class="text-muted"><b>Venue:</b><a href="https://www.google.com/maps/dir//NH-12,+Narsingh+Road,+Sanjay+Nagar,+Rajgarh,+Madhya+Pradesh+465669/@23.7069212,76.9953178,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x397b7b92f3070427:0x85ff7dc9599c9412!2m2!1d77.0777151!2d23.7069717?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"> Hotel Bhandari Palace , Narsinghgarh Disct Rajgargh 465669</a></p>
+                                
                             </div>
                         </div>
                     </li>
@@ -160,7 +177,7 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <img class="img-circle img-responsive" src="img/about1/21.jfif" alt="">
-                        </div>
+                           </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Sangeet</h4>
@@ -242,7 +259,7 @@
     </section>
 
     <!-- google maps -->
-    <section id="maps">
+    <section id="maps" class="map">
                     <h2 class="section-heading text-center">See On Maps</h2>
                     <a href="https://www.google.com/maps/place/Hotel+Bhandari+Palace,+Narsinghgarh/@23.706943,77.0751445,17z/data=!3m1!4b1!4m9!3m8!1s0x397b7b92f3070427:0x85ff7dc9599c9412!5m2!4m1!1i2!8m2!3d23.706943!4d77.0777194!16s%2Fg%2F11bxkdc5rq!5m1!1e4?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D" style="display: block; text-align: center;">
                         <img src="img/map/map.jpeg" class="img-responsive" style="border: 0px; display: inline-block; width:800px ; height:auto ;">
@@ -324,13 +341,6 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var audio = document.getElementById('background-audio');
-            if (audio) {
-                audio.volume = 0.5; // Set volume to 50%
-            }
-        })
-    </script>
+    
 </body>
 </html>
